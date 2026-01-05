@@ -38,8 +38,22 @@ The app allows users to **register, login, manage recipes**, and explore a rich 
 
 ### Frontend
 ```bash
-cd client_Side
+cd recipe-app-clientside
 npm install
-npm start
+npm run dev
 
-
+```bash
+# 2️⃣ Backend Setup
+# Clone the backend repository
+git clone https://github.com/hanithakkar887/recipe-app-backend.git
+# Navigate to the backend folder
+cd recipe-app-backend
+# Install dependencies
+npm install
+# Create a .env file and add your environment variables (MONGO_URI, JWT_SECRET, PORT)
+# Example:
+# MONGO_URI=your_mongodb_connection_string
+# JWT_SECRET=your_jwt_secret
+# PORT=5000
+# Start the backend server
+node server.js
